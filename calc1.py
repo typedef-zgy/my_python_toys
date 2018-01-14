@@ -145,7 +145,7 @@ class Interpreter(object):
 
 def main():
     while True:
-        '''
+        #'''
         try:
             # To run under Python3 replace 'raw_input' call
             # with 'input'
@@ -155,8 +155,8 @@ def main():
             break
         if not text:
             continue
-        '''
-        text = "1+2*2"
+        #'''
+        #text = "1+2*2"
         interpreter = Interpreter(text)
         result = interpreter.expr()
         print(result)
