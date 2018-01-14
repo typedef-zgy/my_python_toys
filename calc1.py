@@ -3,7 +3,7 @@
 #EOF(end of file)token is used to indicate that there is no more input left for ananlynis
 
 INTEGER, PLUS, MINUS, MULTI, DIVID, EOF = 'INTEGER', 'PLUS', 'MINUS', 'MULTI', "DIVID", 'EOF'
-OperKey = {PLUS : '+', MINUS : '-', 'MULTI' : '*', DIVID : '//'} 
+OperKey = {PLUS : '+', MINUS : '-', 'MULTI' : '*', DIVID : '/'} 
 
 class Token(object):
     def __init__(self, type, value):
@@ -156,7 +156,7 @@ def main():
         if not text:
             continue
         #'''
-        #text = "1+2*2"
+        #text = "10 / 5"
         interpreter = Interpreter(text)
         result = interpreter.expr()
         print(result)
