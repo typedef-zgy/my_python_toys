@@ -4,6 +4,7 @@ import imageio
 
 x_list = [x for x in range(1, 255) if x % 20 == 0]
 img_list = []
+path = 'F:\\my_python_toys\\'
 '''
 img_aa = cv2.imread(r'G:\a.bmp')
 #aa_pray = cv2.cvtColor(img_aa, cv2.COLOR_BGR2HLS)
